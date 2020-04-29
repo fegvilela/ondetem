@@ -5,7 +5,8 @@
 - *perName: string (nome da pessoa que entrou em contato)
 - *ifValidated: boolean (se foi validado pelo produtor/empresa)
 - obs: string (observações)
-- entDifficulties (principais dificuldades)
+- entDifficulties: string (principais dificuldades)
+- entDescription: string (descrição)
   
 - entProducts: json (produtos)
 

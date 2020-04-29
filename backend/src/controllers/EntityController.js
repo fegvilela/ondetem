@@ -7,8 +7,10 @@ module.exports = {
 
     // busca todas
     async index(req, res){
-        //tratar as páginas depois com o mongoosePaginate
-        const entities = await Entity.find(); // select *
+        
+        const {page = 1} = req.query; // pegando a página enviada por parâmetro na url. Por default usa 1 ( se não encontrar nenhuma página )
+
+        const entities = await Entity.paginate({ /* aqui iriam as condições */}, {page, limit: 10}); // select *
 
         return res.json(entities);
     },

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// const mongoosePaginate = require('mongoose-paginate');
+const mongoosePaginate = require('mongoose-paginate'); // vai nos auxiliar na paginação
 
 const EntitySchema = new mongoose.Schema({
     entName: {
@@ -29,6 +29,11 @@ const EntitySchema = new mongoose.Schema({
     },
 
     entDifficulties: {
+        type: String,
+        required: false
+    },
+
+    entDescription: {
         type: String,
         required: false
     },
@@ -64,6 +69,6 @@ const EntitySchema = new mongoose.Schema({
     }
 });
 
-// EntitySchema.plugin(mongoosePaginate); // aqui estamos colocando em uso o módulo que instalamos (mongoose-paginate), que está sendo utilizado no método find() no nosso arquivo controller
+EntitySchema.plugin(mongoosePaginate); // aqui estamos colocando em uso o módulo que instalamos (mongoose-paginate), que está sendo utilizado no método find() no nosso arquivo controller
 
 mongoose.model('Entity', EntitySchema);  // faz com que toda a plicação reconheça que uma Entity tenha um model pronto 

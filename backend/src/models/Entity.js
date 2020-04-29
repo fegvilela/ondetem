@@ -7,22 +7,57 @@ const EntitySchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    entContact: {
-        type: JSON,
+
+    entType: {
+        type: String,
         required: true
     },
+
     perName: {
         type: String,
         required: true
     },
-    entCnpj: {
+
+    ifValidated: {
+        type: Boolean,
+        default: false
+    },
+
+    obs: {
         type: String,
         required: false
     },
-    entSite: {
+
+    entDifficulties: {
         type: String,
         required: false
     },
+
+    entProducts: {
+        type: JSON,
+        required: false
+    },
+
+    entServices: {
+        type: JSON,
+        required: false
+    },
+
+    entInfo: {
+        type: JSON,
+        required: true
+    },
+
+    paymentInfo: {
+        type: JSON,
+        required: false
+    },
+
+    entDeliverInfo: {
+        type: JSON,
+        required: false
+    },
+
     createdAt: {
         type: Date,
         default: Date.now

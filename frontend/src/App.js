@@ -1,12 +1,17 @@
 import React from 'react';
+
 // !precisamos importar a logo
 import './global.css';
 
+import Header from './components/Header'
 import Routes from './routes';
 
 function App() {
   return (
-    <Routes />
+    <div className="App">
+      <Header />
+      <Routes />
+    </div>
   );
 }
 

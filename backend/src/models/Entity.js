@@ -23,6 +23,10 @@ const EntitySchema = new mongoose.Schema({
         type: String,
         required: false
     },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 // EntitySchema.plugin(mongoosePaginate); // aqui estamos colocando em uso o módulo que instalamos (mongoose-paginate), que está sendo utilizado no método find() no nosso arquivo controller

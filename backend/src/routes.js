@@ -6,7 +6,11 @@ const EntityController = require('./controllers/EntityController'); // importand
 
 // rotas
 routes.get('/entities', EntityController.index); // mostra todas as entidades
+routes.get('/entities/:id', EntityController.show); // mostra a entidade com o ID igual ao enviado por parâmetro
+routes.post('/entities', EntityController.store); // cadastra uma entidade nova
+routes.delete('/entities/:id', EntityController.destroy); // deleta uma entidade baseado no ID enviado por parâmetro
+routes.put('/entities/:id', EntityController.update); // faz update em uma entidade baseado no id enviado
 
-routes.post('/entities', EntityController.store); // mostra todas as entidades
+
 //exportando as rotas
 module.exports = routes;

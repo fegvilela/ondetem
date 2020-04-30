@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import api from '../../services/api'; // importando nossa api
+import {Link} from 'react-router-dom';
 
 import './styles.css';
 
@@ -26,7 +27,7 @@ export default class List extends Component{
     }
 
     prevPage = () => {
-        const {page, entityInfo} = this.state;
+        const {page} = this.state;
 
         if(page === 1) return; // se a página for a primeira, não faça nada
 
@@ -51,12 +52,15 @@ export default class List extends Component{
 
         return (
             <div className="entity-list">
+                <div className="searchBar">
+                    <input type="text" placeholder="Pesquisar"/>
+                </div>
                 {entities.map(entity => ( /* vai executar o que estiver dentro da função para cada entidade encontrada */
                     <article key={entity._id}>
                         <strong>{entity.entName}</strong>
                         <p>{entity.entDescription}</p>
 
-                        <a href="">Acessar</a>
+                        <Link to={`/entities/${entity._id}`} >Acessar</Link>
                     </article>
                 ))}
                 <div className="actions">

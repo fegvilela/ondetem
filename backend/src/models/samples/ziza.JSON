@@ -1,0 +1,40 @@
+{
+    "ifValidated": false,
+    "entName": "Cantinho da Ziza",
+            "entType": "Produtor",
+            "perName": "Ziza",
+            "entDescription": "Os melhores doces de Brasília unidos em um só lugar!",
+    "entProducts": [
+            {"item": "Bolo de Cenoura com Cobertura de Chocolate", "value": "15.00"},
+            {"item": "Brigadeiro de Leite Ninho", "value": "3.99"}
+    ],
+    "entInfo": {
+        "address": "Asa Sul",
+        "email": "zizacantinho@gmail.com",
+        "phone": "61911223344",
+        "site": "cantinhodaziza.com.br",
+        "cnpj": "11.223.344/001-23"
+    },
+    "paymentInfo": {
+        "methods": [
+            "ifood",
+            "ubereats",
+            "visa",
+            "mastercard",
+            "picpay"
+        ]
+    },
+    "entDeliverInfo": {
+        "ifDeliver": true,
+        "location": [
+            "Asa Sul",
+            "Asa Norte",
+            "Sudoeste"
+        ],
+        "methods": [
+            "iFood",
+            "Ubereats",
+            "Meio Próprio"
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "entName": "Despensa do Basílio",
+            "entType": "Loja",
+            "perName": "Ziza",
+            "entDescription": "Somos a despensa do Basílio. Tudo o que você procura reunido em um só lugar.",
+    "entProducts": [
+            {"item": "Laticínios", "value": "15.00"},
+            {"item": "Verduras", "value": "3.99"},
+            {"item": "Frutas", "value": "3.99"}
+    ],
+    "entInfo": {
+        "address": "Asa Sul",
+        "email": "despensa@basilio.com",
+        "phone": "61911223344",
+        "site": "basilio.com.br",
+        "cnpj": "11.223.344/001-23"
+    },
+    "paymentInfo": {
+        "methods": [
+            "ifood",
+            "ubereats",
+            "visa",
+            "mastercard",
+            "picpay"
+        ]
+    },
+    "entDeliverInfo": {
+        "ifDeliver": true,
+        "location": [
+            "Jardim Botânico",
+            "Asa Norte",
+            "Condomínio Solar de Brasília"
+        ],
+        "methods": [
+            "iFood",
+            "Ubereats",
+            "Meio Próprio"
+        ]
+    }
+}

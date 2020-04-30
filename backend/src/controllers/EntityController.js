@@ -12,6 +12,7 @@ module.exports = {
 
         const entities = await Entity.paginate({ /* aqui iriam as condições */}, {page, limit: 10}); // select *
 
+
         return res.json(entities);
     },
 
